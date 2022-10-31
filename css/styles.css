@@ -326,9 +326,6 @@ img {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
-.card {
-  /* border-bottom: var(--cards-bottom-border-color); */
-}
 .card-heading {
   margin-top: 0;
   margin-bottom: 10px;
