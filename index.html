@@ -20,7 +20,7 @@
     <header class="page-header">
       <div class="container main-nav">
         <!-- Навігація -->
-        <nav class="main-nav">
+        <nav class="nav">
           <a href="./index.html" class="logo"><span class="logo-text">Web</span>Studio</a>
           <ul class="list site-nav">
             <li class="item"><a href="./index.html" class="link current">Студія</a></li>
@@ -54,30 +54,38 @@
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="list list-flexbox">
-            <li class="item features">
-              <h3 class="list-features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="list-features-text">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
-            </li>
-            <li class="item features">
-              <h3 class="list-features-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="list-features-text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-              </p>
-            </li>
-            <li class="item features">
-              <h3 class="list-features-title">ПЛАНУВАННЯ</h3>
-              <p class="list-features-text">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li class="item features">
-              <h3 class="list-features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="list-features-text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-              </p>
-            </li>
+            <div class="features">
+              <li class="item">
+                <h3 class="list-features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="list-features-text">
+                  Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                </p>
+              </li>
+            </div>
+            <div class="features">
+              <li class="item">
+                <h3 class="list-features-title">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="list-features-text">
+                  Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                </p>
+              </li>
+            </div>
+            <div class="features">
+              <li class="item">
+                <h3 class="list-features-title">ПЛАНУВАННЯ</h3>
+                <p class="list-features-text">
+                  Так само консультація з широким активом значною мірою зумовлює.
+                </p>
+              </li>
+            </div>
+            <div class="features">
+              <li class="item">
+                <h3 class="list-features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="list-features-text">
+                  Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                </p>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
@@ -86,15 +94,26 @@
         <div class="container">
           <h2 class="section-name">Чим ми займаємося</h2>
           <ul class="list list-flexbox">
-            <li class="item">
-              <img src="./images/development.jpg" alt="Web-Development" width="370" height="294" />
-            </li>
-            <li class="item">
-              <img src="images/marketing.jpg" alt="Marketing" width="370" height="294" />
-            </li>
-            <li class="item">
-              <img src="images/design.jpg" alt="Design" width="370" height="294" />
-            </li>
+            <div class="work-item">
+              <li class="item">
+                <img
+                  src="./images/development.jpg"
+                  alt="Web-Development"
+                  width="370"
+                  height="294"
+                />
+              </li>
+            </div>
+            <div class="work-item">
+              <li class="item">
+                <img src="images/marketing.jpg" alt="Marketing" width="370" height="294" />
+              </li>
+            </div>
+            <div class="work-item">
+              <li class="item">
+                <img src="images/design.jpg" alt="Design" width="370" height="294" />
+              </li>
+            </div>
           </ul>
         </div>
       </section>
@@ -103,36 +122,44 @@
         <div class="container">
           <h2 class="section-name">Наша команда</h2>
           <ul class="list list-flexbox">
-            <li class="item">
-              <div class="section-command-foto">
-                <img src="images/igor.jpg" alt="Igor" width="270" height="260" />
-              </div>
-              <div class="command-content">
-                <h3 class="section-command-people">Ігор Дем'яненко</h3>
-                <p class="section-command-position">Product Designer</p>
-              </div>
-            </li>
-            <li class="item">
-              <img src="images/olga.jpg" alt="Olga" width="270" height="260" />
-              <div class="command-content">
-                <h3 class="section-command-people">Ольга Рєпіна</h3>
-                <p class="section-command-position">Frontend Developer</p>
-              </div>
-            </li>
-            <li class="item">
-              <img src="images/mykola.jpg" alt="Mykola" width="270" height="260" />
-              <div class="command-content">
-                <h3 class="section-command-people">Микола Тарасов</h3>
-                <p class="section-command-position">Marketing</p>
-              </div>
-            </li>
-            <li class="item">
-              <img src="images/mykhailo.jpg" alt="Mykhailo" width="270" height="260" />
-              <div class="command-content">
-                <h3 class="section-command-people">Михайло Єрмаков</h3>
-                <p class="section-command-position">UI Designer</p>
-              </div>
-            </li>
+            <div class="command-item">
+              <li class="item">
+                <div class="section-command-foto">
+                  <img src="images/igor.jpg" alt="Igor" width="270" height="260" />
+                </div>
+                <div class="command-content">
+                  <h3 class="section-command-people">Ігор Дем'яненко</h3>
+                  <p class="section-command-position">Product Designer</p>
+                </div>
+              </li>
+            </div>
+            <div class="command-item">
+              <li class="item">
+                <img src="images/olga.jpg" alt="Olga" width="270" height="260" />
+                <div class="command-content">
+                  <h3 class="section-command-people">Ольга Рєпіна</h3>
+                  <p class="section-command-position">Frontend Developer</p>
+                </div>
+              </li>
+            </div>
+            <div class="command-item">
+              <li class="item">
+                <img src="images/mykola.jpg" alt="Mykola" width="270" height="260" />
+                <div class="command-content">
+                  <h3 class="section-command-people">Микола Тарасов</h3>
+                  <p class="section-command-position">Marketing</p>
+                </div>
+              </li>
+            </div>
+            <div class="command-item">
+              <li class="item">
+                <img src="images/mykhailo.jpg" alt="Mykhailo" width="270" height="260" />
+                <div class="command-content">
+                  <h3 class="section-command-people">Михайло Єрмаков</h3>
+                  <p class="section-command-position">UI Designer</p>
+                </div>
+              </li>
+            </div>
           </ul>
         </div>
       </section>

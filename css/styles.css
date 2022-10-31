@@ -25,7 +25,7 @@ body {
 }
 /* Розміри контейнеру */
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -38,14 +38,19 @@ img {
   height: auto;
 }
 /* Шапка */
+
 .main-nav {
   display: flex;
   align-items: center;
   justify-self: flex-start;
 }
+.nav {
+  display: flex;
+}
 .page-header {
   border-bottom: 1px solid var(--footer-bottom-border-color);
 }
+
 /* Логотип */
 .logo {
   display: block;
@@ -194,14 +199,10 @@ img {
 }
 .list-flexbox {
   display: flex;
-  justify-content: space-between;
-  padding-left: 0px;
+  column-gap: 30px;
 }
 .list-flexbox .features {
-  width: 270px;
-}
-.list-flexbox .item:not(:last-child) {
-  margin-right: 30px;
+  flex-basis: calc((100%-90px) / 4);
 }
 .list-features-title {
   margin-bottom: 10px;
@@ -221,16 +222,20 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+/* Чим ми займаємося */
+.list-flexbox .work-item {
+  flex-basis: calc((100%-60px) / 3);
+}
 /* Наша команда */
 .section-command {
   padding-top: 94px;
   padding-bottom: 94px;
-
   background-color: var(--command-background-color);
 }
 .section-command .item {
   background-color: var(--background-color);
   box-shadow: var(--card-shadow);
+  border-radius: 4px;
 }
 .section-command-people {
   margin-bottom: 10px;
@@ -250,6 +255,9 @@ img {
 .command-content {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.list-flexbox .command-item {
+  flex-basis: calc((100%-90px) / 4);
 }
 /* Підвал */
 .footer {
@@ -282,9 +290,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--hero-title-color);
 }
-.list li:not(:last-child) {
-  margin-bottom: 9px;
-}
 .address .link {
   font-size: 14px;
   line-height: 1.7;
@@ -296,6 +301,9 @@ img {
 .address .link:hover,
 .address .link:focus {
   color: var(--hover--color);
+}
+.address li:first-child {
+  margin-bottom: 9px;
 }
 .logo-text-footer {
   color: var(--text-logo-footer);
@@ -322,7 +330,8 @@ img {
   /* border-bottom: var(--cards-bottom-border-color); */
 }
 .card-heading {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -330,7 +339,7 @@ img {
   color: var(--title-color);
 }
 .card-text {
-  margin-top: 4px;
+  margin: 0;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
@@ -387,4 +396,5 @@ img {
   color: var(--hero-title-color);
   border: 0;
   border-radius: 4px;
+  box-shadow: var(--card-shadow);
 }
