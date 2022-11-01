@@ -265,7 +265,7 @@ img {
   padding-bottom: 30px;
 }
 .list-flexbox .command-item {
-  flex-basis: calc((100%-3 * var(--card-set-gap)) / 4);
+  flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
 }
 /* Підвал */
 .footer {
