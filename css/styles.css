@@ -204,10 +204,14 @@ img {
 /* Особливості */
 .list-flexbox {
   display: flex;
-  column-gap: var(--card-set-gap);
+  /* column-gap: var(--card-set-gap); */
 }
 .list-flexbox .features-item {
   flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
+  margin-right: var(--card-set-gap);
+}
+.list-flexbox .features-item:last-child {
+  margin-right: 0;
 }
 .list-features-title {
   margin-bottom: 10px;
@@ -234,6 +238,10 @@ img {
 }
 .list-flexbox .work-item {
   flex-basis: calc((100% - 2 * var(--card-set-gap)) / 3);
+  margin-right: var(--card-set-gap);
+}
+.list-flexbox .work-item:last-child {
+  margin-right: 0;
 }
 /* Наша команда */
 .section-command {
@@ -267,6 +275,10 @@ img {
 }
 .list-flexbox .command-item {
   flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
+  margin-right: var(--card-set-gap);
+}
+.list-flexbox .command-item:last-child {
+  margin-right: 0;
 }
 /* Підвал */
 .footer {
