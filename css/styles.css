@@ -212,6 +212,7 @@ img {
 .list-features-title {
   margin-bottom: 10px;
   margin-top: 0;
+  padding: 0;
 
   font-weight: 700;
   font-size: 14px;
@@ -331,7 +332,6 @@ img {
 
 .card-set .item {
   flex-basis: calc((100% - 2 * var(--card-set-gap)) / 3);
-  /* flex-basis: calc(100% / 3 - var(--card-set-gap)); */
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
 }
