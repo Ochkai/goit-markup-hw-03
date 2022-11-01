@@ -325,15 +325,23 @@ img {
 
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
+  margin-right: calc(-1 * var(--card-set-gap));
+  margin-bottom: calc(-1 * var(--card-set-gap));
 }
 
 .card-set .item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
+  flex-basis: calc((100% - 2 * var(--card-set-gap)) / 3);
+  /* flex-basis: calc(100% / 3 - var(--card-set-gap)); */
+  margin-right: var(--card-set-gap);
+  margin-bottom: var(--card-set-gap);
 }
+.card-set .item:nth-child(3n) {
+  margin-right: 0;
+}
+.card-set .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .card-heading {
   margin-top: 0;
   margin-bottom: 10px;
