@@ -207,7 +207,7 @@ img {
   column-gap: var(--card-set-gap);
 }
 .list-flexbox .features-item {
-  flex-basis: calc((100%- 3 * var(--card-set-gap)) / 4);
+  flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
 }
 .list-features-title {
   margin-bottom: 10px;
@@ -232,7 +232,7 @@ img {
   margin-top: -94px;
 }
 .list-flexbox .work-item {
-  flex-basis: calc((100%-2 * var(--card-set-gap)) / 3);
+  flex-basis: calc((100% - 2 * var(--card-set-gap)) / 3);
 }
 /* Наша команда */
 .section-command {
