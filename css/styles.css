@@ -332,25 +332,19 @@ img {
 
 /* CARD SET */
 .card-set {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * var(--card-set-gap));
-  margin-bottom: calc(-1 * var(--card-set-gap));
 }
 
-.card-set .item {
+.card-set .card-item {
   flex-basis: calc((100% - 2 * var(--card-set-gap)) / 3);
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
 }
-.card-set .item:nth-child(3n) {
+.card-set .card-item:nth-child(3n) {
   margin-right: 0;
 }
-.card-set .item:nth-last-child(-n + 3) {
+.card-set .card-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
